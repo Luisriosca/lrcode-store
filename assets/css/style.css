@@ -1,0 +1,70 @@
+:root{
+    --light-green: #DDEFBB ;
+    --light-pink: #FFEEEE;
+    --color1: #131200; /* Dark Chocolate*/
+    --color2: #E3D1D1; /* Misty Rose*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #FFEEEE; */
+    /* background: -webkit-linear-gradient(to left, #DDEFBB, #FFEEEE); */
+    background: linear-gradient(
+        to bottom right, 
+        #DDEFBB 0%, 
+        #FFEEEE 10%,
+        #DDEFBB 40%, 
+        #FFEEEE 60%,
+        #DDEFBB 90%, 
+        #FFEEEE 100% 
+    );    
+    width: 100%;
+    height: 100vh; 
+    background-size: 300% 300%;
+    animation: bg-animation 15s linear infinite alternate-reverse;
+    
+    /* !--PRUEBA DE ESTILO--! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-box {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 16px;
+    text-align: center;
+}
+
+@keyframes bg-animation {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+.font-oswald{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.font-quatrocentto{
+    font-family: 'Quattrocento', serif;
+}
